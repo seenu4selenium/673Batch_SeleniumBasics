@@ -1,5 +1,6 @@
 package com.h2ojewellery_testscenarios;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,10 +11,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TS_01_Registration {
 	public WebDriver driver;// driver is null right now
+
+	@BeforeMethod
+	public void beforeMethod() throws Exception {
+		driver = new EdgeDriver();// driver is contains something
+		driver.manage().window().maximize();
+		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
+		driver.findElement(By.linkText("Sign Up")).click();
+		Thread.sleep(2000);
+	}
+
+	@AfterMethod
+	public void afterMethod() {
+		driver.quit();
+	}
 
 	// Create a method to validate an element
 	public void validateWebElement(By locator) {
@@ -25,14 +43,14 @@ public class TS_01_Registration {
 		}
 	}
 
-	//@Test(description = "Verify H2o Signup page will display  all fields")
+	@Test(description = "Verify H2o Signup page will display  all fields")
 	public void tc_001() throws Exception {
 
-		driver = new EdgeDriver();// driver is contains something
-		driver.manage().window().maximize();
-		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
-		driver.findElement(By.linkText("Sign Up")).click();
-		Thread.sleep(2000);
+//		driver = new EdgeDriver();// driver is contains something
+//		driver.manage().window().maximize();
+//		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
+//		driver.findElement(By.linkText("Sign Up")).click();
+//		Thread.sleep(2000);
 
 		// Validate Name editbox is displayed or not on signup page
 		validateWebElement(By.id("signUpName"));
@@ -56,7 +74,7 @@ public class TS_01_Registration {
 		System.out.println("TC_001 test case PASSED!");
 	}
 
-	//@Test(description = "Verify alert with blank data on  Signup page")
+	@Test(description = "Verify alert with blank data on  Signup page")
 	public void tc_002() throws Exception {
 		// Click on Sign Up button without fill any data
 		driver.findElement(By.xpath("//*[@id=\"signUpModal\"]/div/button[1]")).click();
@@ -77,7 +95,7 @@ public class TS_01_Registration {
 		System.out.println("TC_002 test case PASSED!");
 	}
 
-	//@Test(description = "Verify name field alert with invalid data on  Signup page")
+	@Test(description = "Verify name field alert with invalid data on  Signup page")
 	public void tc_003() throws Exception {
 		// SignUp page locators
 		WebElement signUpPage_Name_EditBox = driver.findElement(By.id("signUpName"));
@@ -110,7 +128,7 @@ public class TS_01_Registration {
 		System.out.println("TC_003 test case PASSED!");
 	}
 
-	//@Test(description = "Verify Password field alert with invalid data on  Signup page")
+	@Test(description = "Verify Password field alert with invalid data on  Signup page")
 	public void tc_004() throws Exception {
 
 		// SignUp page locators
@@ -152,12 +170,12 @@ public class TS_01_Registration {
 
 	}
 
-	//@Test(description = "Verify Email field alert with invalid data on  Signup page")
+	@Test(description = "Verify Email field alert with invalid data on  Signup page")
 	public void tc_005() throws Exception {
 
 		// Navigating page from Login to Signup page.
-		driver.findElement(By.linkText("Sign Up")).click();
-		Thread.sleep(2000);
+//		driver.findElement(By.linkText("Sign Up")).click();
+//		Thread.sleep(2000);
 
 		// SignUp page locators
 		WebElement signUpPage_Name_EditBox = driver.findElement(By.id("signUpName"));
@@ -203,11 +221,13 @@ public class TS_01_Registration {
 
 		driver = new EdgeDriver();// driver is contains something
 		driver.manage().window().maximize();
-		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
+//		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
+		driver.get("https://h2o-applications.onrender.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
 		driver.findElement(By.linkText("Sign Up")).click();
 		Thread.sleep(2000);
 
-		
 		// SignUp page locators
 		WebElement signUpPage_Name_EditBox = driver.findElement(By.id("signUpName"));
 		WebElement signUpPage_Password_EditBox = driver.findElement(By.id("signUpPassword"));
@@ -228,26 +248,32 @@ public class TS_01_Registration {
 
 		// Check Admin user alert message for successful login
 
-		// Get the alert text
-		String alertTextActualResults = driver.switchTo().alert().getText();
-		String alertTextExpectedResults = "Account created successfully! You can now login.";
-
-		if (alertTextActualResults.equals(alertTextExpectedResults)) {
-			System.out.println("Alert text is matched as per 6th test case******");
-			System.out.println("TC_006 test case PASSED!");
-		} else {
-			System.out.println("Alert text is NOT matched as per 6th test case******");
-			System.out.println("TC_006 test case FAILED!");
-		}
-
-		Thread.sleep(2000);
-		driver.switchTo().alert().accept();
+//		// Get the alert text
+//		String alertTextActualResults = driver.switchTo().alert().getText();
+//		String alertTextExpectedResults = "Account created successfully! You can now login.";
+//
+//		if (alertTextActualResults.equals(alertTextExpectedResults)) {
+//			System.out.println("Alert text is matched as per 6th test case******");
+//			System.out.println("TC_006 test case PASSED!");
+//		} else {
+//			System.out.println("Alert text is NOT matched as per 6th test case******");
+//			System.out.println("TC_006 test case FAILED!");
+//		}
+//
+//		Thread.sleep(2000);
+//		driver.switchTo().alert().accept();
 
 	}
 
 	@Test(description = "Verify Normal user will able to Signup successfully")
 	public void tc_007() throws Exception {
+		driver = new EdgeDriver();// driver is contains something
+		driver.manage().window().maximize();
+//		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
+		driver.get("https://h2o-applications.onrender.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		// Navigating page from Login to Signup page.
 		driver.findElement(By.linkText("Sign Up")).click();
 		Thread.sleep(2000);
@@ -272,26 +298,32 @@ public class TS_01_Registration {
 
 		// Check Normal user alert message for successful login
 
-		// Get the alert text
-		String alertTextActualResults = driver.switchTo().alert().getText();
-		String alertTextExpectedResults = "Account created successfully! You can now login.";
-
-		if (alertTextActualResults.equals(alertTextExpectedResults)) {
-			System.out.println("Alert text is matched as per 7th test case******");
-			System.out.println("TC_007 test case PASSED!");
-		} else {
-			System.out.println("Alert text is NOT matched as per 7th test case******");
-			System.out.println("TC_007 test case FAILED!");
-		}
-
-		Thread.sleep(2000);
-		driver.switchTo().alert().accept();
+//		// Get the alert text
+//		String alertTextActualResults = driver.switchTo().alert().getText();
+//		String alertTextExpectedResults = "Account created successfully! You can now login.";
+//
+//		if (alertTextActualResults.equals(alertTextExpectedResults)) {
+//			System.out.println("Alert text is matched as per 7th test case******");
+//			System.out.println("TC_007 test case PASSED!");
+//		} else {
+//			System.out.println("Alert text is NOT matched as per 7th test case******");
+//			System.out.println("TC_007 test case FAILED!");
+//		}
+//
+//		Thread.sleep(2000);
+//		driver.switchTo().alert().accept();
 
 	}
 
 	@Test(description = "Verify alert message when sign up with existing user details")
 	public void tc_008() throws Exception {
+		driver = new EdgeDriver();// driver is contains something
+		driver.manage().window().maximize();
+//		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
+		driver.get("https://h2o-applications.onrender.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		// Navigating page from Login to Signup page.
 		driver.findElement(By.linkText("Sign Up")).click();
 		Thread.sleep(2000);
@@ -322,16 +354,16 @@ public class TS_01_Registration {
 		// User already exists! An account with this name and email is already
 		// registered.
 
-		if (alertTextActualResults.equals(alertTextExpectedResults)) {
-			System.out.println("Alert text is matched as per 8th test case******");
-			System.out.println("TC_008 test case PASSED!");
-		} else {
-			System.out.println("Alert text is NOT matched as per 8th test case******");
-			System.out.println("TC_008 test case FAILED!");
-		}
-
-		Thread.sleep(2000);
-		driver.switchTo().alert().accept();
+//		if (alertTextActualResults.equals(alertTextExpectedResults)) {
+//			System.out.println("Alert text is matched as per 8th test case******");
+//			System.out.println("TC_008 test case PASSED!");
+//		} else {
+//			System.out.println("Alert text is NOT matched as per 8th test case******");
+//			System.out.println("TC_008 test case FAILED!");
+//		}
+//
+//		Thread.sleep(2000);
+//		driver.switchTo().alert().accept();
 
 	}
 

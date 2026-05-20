@@ -1,8 +1,12 @@
 package com.testscenarios;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class AlertDemo {
@@ -16,7 +20,14 @@ public class AlertDemo {
 
 		// click on First Click me button
 		driver.findElement(By.id("alertButton")).click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		//Implicit wait
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		
+		//Explicit wait
+		WebDriverWait ww = new WebDriverWait(driver, Duration.ofSeconds(15));
+		ww.until(ExpectedConditions.alertIsPresent());
+		
 
 		// Get the alert text and print into console
 		String alertText = driver.switchTo().alert().getText();

@@ -2,16 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-12T20:09:37 MDT" name="Default suite" finished-at="2026-05-12T20:09:41 MDT" duration-ms="4243">
+  <suite started-at="2026-05-19T20:33:16 MDT" name="Default suite" finished-at="2026-05-19T20:33:20 MDT" duration-ms="3649">
     <groups>
     </groups>
-    <test started-at="2026-05-12T20:09:37 MDT" name="Default test" finished-at="2026-05-12T20:09:41 MDT" duration-ms="4243">
-      <class name="com.h2ojewellery_testscenarios.TS_02">
-        <test-method signature="testnew()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02@3857f613]" started-at="2026-05-12T20:09:37 MDT" name="testnew" description="Verify H2o login page will display  all fields" finished-at="2026-05-12T20:09:41 MDT" duration-ms="4163" status="PASS">
+    <test started-at="2026-05-19T20:33:16 MDT" name="Default test" finished-at="2026-05-19T20:33:20 MDT" duration-ms="3649">
+      <class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@c0c2f8d]" started-at="2026-05-19T20:33:16 MDT" name="beforeClass" finished-at="2026-05-19T20:33:18 MDT" duration-ms="2053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testnew -->
-      </class> <!-- com.h2ojewellery_testscenarios.TS_02 -->
+        </test-method> <!-- beforeClass -->
+        <test-method signature="tc_009()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@c0c2f8d]" started-at="2026-05-19T20:33:18 MDT" name="tc_009" description="Verify H2o login page will display  all fields" finished-at="2026-05-19T20:33:19 MDT" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_009 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@c0c2f8d]" started-at="2026-05-19T20:33:19 MDT" name="closeBrowser" finished-at="2026-05-19T20:33:20 MDT" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.h2ojewellery_testscenarios.TS_02_Login_Logout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
