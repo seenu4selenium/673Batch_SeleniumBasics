@@ -4,13 +4,25 @@
   <test thread-count="5" name="FirefoxTestResults(failed)">
     <parameter name="browserName" value="Firefox"/>
     <classes>
-      <class name="com.testscenarios.CrossBrowserTestingDemo">
+      <class name="com.testscenarios.TS_02_Login_DeviceManagement">
         <methods>
+          <include name="tc_001"/>
           <include name="closeBrowser"/>
-          <include name="login"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.testscenarios.CrossBrowserTestingDemo -->
+      </class> <!-- com.testscenarios.TS_02_Login_DeviceManagement -->
     </classes>
   </test> <!-- FirefoxTestResults(failed) -->
+  <test thread-count="5" name="EdgeTestResults(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="com.testscenarios.TS_02_Login_DeviceManagement">
+        <methods>
+          <include name="tc_001"/>
+          <include name="closeBrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.testscenarios.TS_02_Login_DeviceManagement -->
+    </classes>
+  </test> <!-- EdgeTestResults(failed) -->
 </suite> <!-- Failed suite [CBT_Suite] -->

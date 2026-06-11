@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout">
+      <class name="com.testscenarios.XpathDemo">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="beforeClass"/>
-          <include name="tc_009"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.h2ojewellery_testscenarios.TS_02_Login_Logout -->
+      </class> <!-- com.testscenarios.XpathDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-19T20:58:54 MDT" name="Default suite" finished-at="2026-05-19T20:58:59 MDT" duration-ms="5160">
+  <suite started-at="2026-06-10T20:08:34 MDT" name="MyTestSuite" finished-at="2026-06-10T20:10:30 MDT" duration-ms="116031">
     <groups>
     </groups>
-    <test started-at="2026-05-19T20:58:54 MDT" name="Default test" finished-at="2026-05-19T20:58:59 MDT" duration-ms="5160">
+    <test started-at="2026-06-10T20:08:34 MDT" name="MyTestResults_1" finished-at="2026-06-10T20:10:30 MDT" duration-ms="116031">
+      <class name="com.testscenarios.FlightBooking">
+        <test-method signature="testnew()[pri:0, instance:com.testscenarios.FlightBooking@561b6512]" started-at="2026-06-10T20:08:44 MDT" name="testnew" finished-at="2026-06-10T20:08:54 MDT" duration-ms="9785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testnew -->
+      </class> <!-- com.testscenarios.FlightBooking -->
+      <class name="com.testscenarios.AlertDemo">
+        <test-method signature="f()[pri:0, instance:com.testscenarios.AlertDemo@7770f470]" started-at="2026-06-10T20:08:34 MDT" name="f" finished-at="2026-06-10T20:08:44 MDT" duration-ms="9309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.testscenarios.AlertDemo -->
       <class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@79d8407f]" started-at="2026-05-19T20:58:54 MDT" name="beforeClass" finished-at="2026-05-19T20:58:56 MDT" duration-ms="2077" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@1757cd72]" started-at="2026-06-10T20:10:26 MDT" name="beforeClass" finished-at="2026-06-10T20:10:28 MDT" duration-ms="1206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +30,258 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="tc_009()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@79d8407f]" started-at="2026-05-19T20:58:56 MDT" name="tc_009" description="Verify H2o login page will display  all fields" finished-at="2026-05-19T20:58:58 MDT" duration-ms="2197" status="PASS">
+        <test-method signature="tc_009()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@1757cd72]" started-at="2026-06-10T20:10:28 MDT" name="tc_009" description="Verify H2o login page will display  all fields" finished-at="2026-06-10T20:10:30 MDT" duration-ms="1977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_009 -->
-        <test-method signature="tc_010()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@79d8407f]" started-at="2026-05-19T20:58:58 MDT" name="tc_010" finished-at="2026-05-19T20:58:58 MDT" duration-ms="367" status="PASS">
+        <test-method signature="tc_010()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@1757cd72]" started-at="2026-06-10T20:10:30 MDT" name="tc_010" finished-at="2026-06-10T20:10:30 MDT" duration-ms="462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_010 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@79d8407f]" started-at="2026-05-19T20:58:58 MDT" name="closeBrowser" finished-at="2026-05-19T20:58:59 MDT" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.h2ojewellery_testscenarios.TS_02_Login_Logout@1757cd72]" started-at="2026-06-10T20:10:30 MDT" name="closeBrowser" finished-at="2026-06-10T20:10:30 MDT" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.h2ojewellery_testscenarios.TS_02_Login_Logout -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.h2ojewellery_testscenarios.TS_01_Registration">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:08:54 MDT" name="beforeMethod" finished-at="2026-06-10T20:09:02 MDT" duration-ms="7959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_001()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:02 MDT" name="tc_001" description="Verify H2o Signup page will display  all fields" finished-at="2026-06-10T20:09:02 MDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_001 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:02 MDT" name="afterMethod" finished-at="2026-06-10T20:09:02 MDT" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:02 MDT" name="beforeMethod" finished-at="2026-06-10T20:09:07 MDT" duration-ms="4564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_002()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:07 MDT" name="tc_002" description="Verify alert with blank data on  Signup page" finished-at="2026-06-10T20:09:09 MDT" duration-ms="2123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_002 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:09 MDT" name="afterMethod" finished-at="2026-06-10T20:09:09 MDT" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:09 MDT" name="beforeMethod" finished-at="2026-06-10T20:09:14 MDT" duration-ms="4730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_003()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:14 MDT" name="tc_003" description="Verify name field alert with invalid data on  Signup page" finished-at="2026-06-10T20:09:16 MDT" duration-ms="2520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_003 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:16 MDT" name="afterMethod" finished-at="2026-06-10T20:09:17 MDT" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:17 MDT" name="beforeMethod" finished-at="2026-06-10T20:09:22 MDT" duration-ms="4547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_004()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:22 MDT" name="tc_004" description="Verify Password field alert with invalid data on  Signup page" finished-at="2026-06-10T20:09:26 MDT" duration-ms="4633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_004 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:26 MDT" name="afterMethod" finished-at="2026-06-10T20:09:27 MDT" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:27 MDT" name="beforeMethod" finished-at="2026-06-10T20:09:32 MDT" duration-ms="4740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_005()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:32 MDT" name="tc_005" description="Verify Email field alert with invalid data on  Signup page" finished-at="2026-06-10T20:09:34 MDT" duration-ms="2658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_005 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:34 MDT" name="afterMethod" finished-at="2026-06-10T20:09:35 MDT" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:35 MDT" name="beforeMethod" finished-at="2026-06-10T20:09:40 MDT" duration-ms="5201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_006()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:09:40 MDT" name="tc_006" description="Verify admin user will able to Signup successfully" finished-at="2026-06-10T20:10:03 MDT" duration-ms="22597" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Up"}
+  (Session info: MicrosoftEdge=149.0.4022.62)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [37d6dc4cc5499f7b09975b7e5d87ff8b, findElement {value=Sign Up, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 17096, ms:edgeOptions: {debuggerAddress: localhost:62202}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62202/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37d6dc4cc5499f7b09975b7e5d87ff8b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Up"}
+  (Session info: MicrosoftEdge=149.0.4022.62)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [37d6dc4cc5499f7b09975b7e5d87ff8b, findElement {value=Sign Up, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 17096, ms:edgeOptions: {debuggerAddress: localhost:62202}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62202/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37d6dc4cc5499f7b09975b7e5d87ff8b
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+at com.h2ojewellery_testscenarios.TS_01_Registration.tc_006(TS_01_Registration.java:228)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_006 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:03 MDT" name="afterMethod" finished-at="2026-06-10T20:10:03 MDT" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:03 MDT" name="beforeMethod" finished-at="2026-06-10T20:10:08 MDT" duration-ms="4859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_007()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:08 MDT" name="tc_007" description="Verify Normal user will able to Signup successfully" finished-at="2026-06-10T20:10:15 MDT" duration-ms="6659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_007 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:15 MDT" name="afterMethod" finished-at="2026-06-10T20:10:15 MDT" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:15 MDT" name="beforeMethod" finished-at="2026-06-10T20:10:20 MDT" duration-ms="4725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc_008()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:20 MDT" name="tc_008" description="Verify alert message when sign up with existing user details" finished-at="2026-06-10T20:10:26 MDT" duration-ms="5869" status="FAIL">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: MicrosoftEdge=149.0.4022.62)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [695f53816271167003d14cdd41884c41, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 6216, ms:edgeOptions: {debuggerAddress: localhost:59253}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59253/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 695f53816271167003d14cdd41884c41]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: MicrosoftEdge=149.0.4022.62)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [695f53816271167003d14cdd41884c41, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 6216, ms:edgeOptions: {debuggerAddress: localhost:59253}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59253/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 695f53816271167003d14cdd41884c41
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
+at com.h2ojewellery_testscenarios.TS_01_Registration.tc_008(TS_01_Registration.java:352)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_008 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.h2ojewellery_testscenarios.TS_01_Registration@2e377400]" started-at="2026-06-10T20:10:26 MDT" name="afterMethod" finished-at="2026-06-10T20:10:26 MDT" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.h2ojewellery_testscenarios.TS_01_Registration -->
+      <class name="com.testscenarios.Annaotations_demo2">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testscenarios.Annaotations_demo2@7494f96a]" started-at="2026-06-10T20:08:44 MDT" name="beforeClass" finished-at="2026-06-10T20:08:44 MDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="a()[pri:0, instance:com.testscenarios.Annaotations_demo2@7494f96a]" started-at="2026-06-10T20:08:44 MDT" name="a" finished-at="2026-06-10T20:08:44 MDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method signature="f()[pri:0, instance:com.testscenarios.Annaotations_demo2@7494f96a]" started-at="2026-06-10T20:08:44 MDT" name="f" finished-at="2026-06-10T20:08:44 MDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testscenarios.Annaotations_demo2@7494f96a]" started-at="2026-06-10T20:08:44 MDT" name="afterClass" finished-at="2026-06-10T20:08:44 MDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.testscenarios.Annaotations_demo2 -->
+    </test> <!-- MyTestResults_1 -->
+  </suite> <!-- MyTestSuite -->
 </testng-results>

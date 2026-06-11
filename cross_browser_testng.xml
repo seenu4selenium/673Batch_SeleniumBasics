@@ -4,24 +4,27 @@
 	<test thread-count="5" name="ChromeTestResults">
 		<parameter name="browserName" value="Chrome"></parameter>
 		<classes>
-			<class name="com.testscenarios.CrossBrowserTestingDemo" />
-			<class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout" />
+			<!-- <class name="com.testscenarios.CrossBrowserTestingDemo" /> <class 
+				name="com.h2ojewellery_testscenarios.TS_02_Login_Logout" /> -->
+			<class name="com.testscenarios.TS_02_Login_DeviceManagement" />
 		</classes>
 	</test> <!-- Test -->
 
 	<test thread-count="5" name="FirefoxTestResults">
 		<parameter name="browserName" value="Firefox"></parameter>
 		<classes>
-			<class name="com.testscenarios.CrossBrowserTestingDemo" />
-			<class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout" />
+			<!-- <class name="com.testscenarios.CrossBrowserTestingDemo" /> <class 
+				name="com.h2ojewellery_testscenarios.TS_02_Login_Logout" /> -->
+			<class name="com.testscenarios.TS_02_Login_DeviceManagement" />
 		</classes>
 	</test> <!-- Test -->
 
 	<test thread-count="5" name="EdgeTestResults">
 		<parameter name="browserName" value="Edge"></parameter>
 		<classes>
-			<class name="com.testscenarios.CrossBrowserTestingDemo" />
-			<class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout" />
+			<!-- <class name="com.testscenarios.CrossBrowserTestingDemo" /> <class 
+				name="com.h2ojewellery_testscenarios.TS_02_Login_Logout" /> -->
+			<class name="com.testscenarios.TS_02_Login_DeviceManagement" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
