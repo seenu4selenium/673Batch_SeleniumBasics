@@ -5,22 +5,12 @@
     <classes>
       <class name="com.h2ojewellery_testscenarios.TS_01_Registration">
         <methods>
-          <include name="tc_004"/>
-          <include name="tc_007"/>
           <include name="tc_008"/>
           <include name="tc_006"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.h2ojewellery_testscenarios.TS_01_Registration -->
-      <class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout">
-        <methods>
-          <include name="tc_009"/>
-        </methods>
-      </class> <!-- com.h2ojewellery_testscenarios.TS_02_Login_Logout -->
-      <class name="com.testscenarios.AlertDemo">
-        <methods>
-          <include name="f"/>
-        </methods>
-      </class> <!-- com.testscenarios.AlertDemo -->
     </classes>
   </test> <!-- MyTestResults_1(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MyTestResults_1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 18 20:19:23 MDT 2026</td>
+<td>Started on:</td><td>Wed Jun 10 20:08:34 MDT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38569 ms)</td>
+<tr><td>Total time:</td><td>116 seconds (116031 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,87 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_008()'><b>tc_008</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify alert message when sign up with existing user details</td>
+<td><div><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: MicrosoftEdge=149.0.4022.62)
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [695f53816271167003d14cdd41884c41, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 6216, ms:edgeOptions: {debuggerAddress: localhost:59253}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59253/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 695f53816271167003d14cdd41884c41
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
+	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_008(TS_01_Registration.java:352)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1549623669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1549623669'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: MicrosoftEdge=149.0.4022.62)
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [695f53816271167003d14cdd41884c41, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 6216, ms:edgeOptions: {debuggerAddress: localhost:59253}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59253/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 695f53816271167003d14cdd41884c41
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
+	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_008(TS_01_Registration.java:352)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
+<tr>
 <td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_006()'><b>tc_006</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify admin user will able to Signup successfully</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
-  (Session info: MicrosoftEdge=148.0.3967.70)
+  (Session info: MicrosoftEdge=149.0.4022.62)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1c86ef385b3325135ff5dd882877657e, findElement {using=link text, value=Sign Up}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 14028, ms:edgeOptions: {debuggerAddress: localhost:58372}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58372/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c86ef385b3325135ff5dd882877657e
+Command: [37d6dc4cc5499f7b09975b7e5d87ff8b, findElement {value=Sign Up, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 17096, ms:edgeOptions: {debuggerAddress: localhost:62202}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62202/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37d6dc4cc5499f7b09975b7e5d87ff8b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -97,18 +168,18 @@ Session ID: 1c86ef385b3325135ff5dd882877657e
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_006(TS_01_Registration.java:210)
+	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_006(TS_01_Registration.java:228)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace428798670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace428798670'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
-  (Session info: MicrosoftEdge=148.0.3967.70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589931229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589931229'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
+  (Session info: MicrosoftEdge=149.0.4022.62)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1c86ef385b3325135ff5dd882877657e, findElement {using=link text, value=Sign Up}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 14028, ms:edgeOptions: {debuggerAddress: localhost:58372}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58372/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c86ef385b3325135ff5dd882877657e
+Command: [37d6dc4cc5499f7b09975b7e5d87ff8b, findElement {value=Sign Up, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 17096, ms:edgeOptions: {debuggerAddress: localhost:62202}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62202/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37d6dc4cc5499f7b09975b7e5d87ff8b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -120,7 +191,7 @@ Session ID: 1c86ef385b3325135ff5dd882877657e
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_006(TS_01_Registration.java:210)
+	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_006(TS_01_Registration.java:228)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -148,377 +219,8 @@ Session ID: 1c86ef385b3325135ff5dd882877657e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
-<tr>
-<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_004()'><b>tc_004</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify Password field alert with invalid data on  Signup page</td>
-<td><div><pre>org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: MicrosoftEdge=148.0.3967.70)
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a26ad62016454cc61a80509d1c4641b9, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 5956, ms:edgeOptions: {debuggerAddress: localhost:63273}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63273/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a26ad62016454cc61a80509d1c4641b9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_004(TS_01_Registration.java:138)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2062667107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2062667107'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: MicrosoftEdge=148.0.3967.70)
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a26ad62016454cc61a80509d1c4641b9, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 5956, ms:edgeOptions: {debuggerAddress: localhost:63273}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63273/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a26ad62016454cc61a80509d1c4641b9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_004(TS_01_Registration.java:138)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
-<tr>
-<td title='com.h2ojewellery_testscenarios.TS_02_Login_Logout.tc_009()'><b>tc_009</b><br>Test class: com.h2ojewellery_testscenarios.TS_02_Login_Logout<br>Test method: Verify H2o login page will display  all fields</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;loginModal&quot;]/div/div/div[4]/a[1]&quot;}
-  (Session info: chrome=148.0.7778.168)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aee85e83c5a3c5470c34d844d084ea68, findElement {using=xpath, value=//*[@id=&quot;loginModal&quot;]/div/div/div[4]/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\nalla\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51118}, goog:processID: 23048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51118/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aee85e83c5a3c5470c34d844d084ea68
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_02_Login_Logout.validateWebElement(TS_02_Login_Logout.java:42)
-	at com.h2ojewellery_testscenarios.TS_02_Login_Logout.tc_009(TS_02_Login_Logout.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1953175805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1953175805'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;loginModal&quot;]/div/div/div[4]/a[1]&quot;}
-  (Session info: chrome=148.0.7778.168)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aee85e83c5a3c5470c34d844d084ea68, findElement {using=xpath, value=//*[@id=&quot;loginModal&quot;]/div/div/div[4]/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\nalla\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51118}, goog:processID: 23048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51118/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aee85e83c5a3c5470c34d844d084ea68
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_02_Login_Logout.validateWebElement(TS_02_Login_Logout.java:42)
-	at com.h2ojewellery_testscenarios.TS_02_Login_Logout.tc_009(TS_02_Login_Logout.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>com.h2ojewellery_testscenarios.TS_02_Login_Logout@291caca8</td></tr>
-<tr>
-<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_008()'><b>tc_008</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify alert message when sign up with existing user details</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
-  (Session info: MicrosoftEdge=148.0.3967.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1c86ef385b3325135ff5dd882877657e, findElement {using=link text, value=Sign Up}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 14028, ms:edgeOptions: {debuggerAddress: localhost:58372}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58372/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c86ef385b3325135ff5dd882877657e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_008(TS_01_Registration.java:299)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194903130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace194903130'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
-  (Session info: MicrosoftEdge=148.0.3967.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1c86ef385b3325135ff5dd882877657e, findElement {using=link text, value=Sign Up}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 14028, ms:edgeOptions: {debuggerAddress: localhost:58372}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58372/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c86ef385b3325135ff5dd882877657e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_008(TS_01_Registration.java:299)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
-<tr>
-<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_007()'><b>tc_007</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify Normal user will able to Signup successfully</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
-  (Session info: MicrosoftEdge=148.0.3967.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1c86ef385b3325135ff5dd882877657e, findElement {using=link text, value=Sign Up}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 14028, ms:edgeOptions: {debuggerAddress: localhost:58372}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58372/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c86ef385b3325135ff5dd882877657e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_007(TS_01_Registration.java:255)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1153802607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1153802607'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Up&quot;}
-  (Session info: MicrosoftEdge=148.0.3967.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1c86ef385b3325135ff5dd882877657e, findElement {using=link text, value=Sign Up}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 14028, ms:edgeOptions: {debuggerAddress: localhost:58372}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\nalla\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58372/devtoo..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c86ef385b3325135ff5dd882877657e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at com.h2ojewellery_testscenarios.TS_01_Registration.tc_007(TS_01_Registration.java:255)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
-<tr>
-<td title='com.testscenarios.AlertDemo.f()'><b>f</b><br>Test class: com.testscenarios.AlertDemo</td>
-<td><div><pre>org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=148.0.7778.168)
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b6212fe26027396a926dad56f17903c, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\nalla\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52427}, goog:processID: 16764, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52427/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b6212fe26027396a926dad56f17903c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
-	at com.testscenarios.AlertDemo.f(AlertDemo.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061448687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1061448687'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=148.0.7778.168)
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b6212fe26027396a926dad56f17903c, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\nalla\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52427}, goog:processID: 16764, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52427/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b6212fe26027396a926dad56f17903c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:688)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:692)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1335)
-	at com.testscenarios.AlertDemo.f(AlertDemo.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>7</td>
-<td>com.testscenarios.AlertDemo@65e98b1c</td></tr>
+<td>22</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -529,40 +231,65 @@ Session ID: 8b6212fe26027396a926dad56f17903c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_002()'><b>tc_002</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify alert with blank data on  Signup page</td>
-<td></td>
-<td>2</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
-<tr>
 <td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_005()'><b>tc_005</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify Email field alert with invalid data on  Signup page</td>
 <td></td>
-<td>4</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
+<td>2</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
 <tr>
 <td title='com.testscenarios.FlightBooking.testnew()'><b>testnew</b><br>Test class: com.testscenarios.FlightBooking</td>
 <td></td>
-<td>10</td>
-<td>com.testscenarios.FlightBooking@45b4c3a9</td></tr>
-<tr>
-<td title='com.testscenarios.Annaotations_demo2.f()'><b>f</b><br>Test class: com.testscenarios.Annaotations_demo2</td>
-<td></td>
-<td>0</td>
-<td>com.testscenarios.Annaotations_demo2@6a2f6f80</td></tr>
-<tr>
-<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_001()'><b>tc_001</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify H2o Signup page will display  all fields</td>
-<td></td>
-<td>5</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
-<tr>
-<td title='com.testscenarios.Annaotations_demo2.a()'><b>a</b><br>Test class: com.testscenarios.Annaotations_demo2</td>
-<td></td>
-<td>0</td>
-<td>com.testscenarios.Annaotations_demo2@6a2f6f80</td></tr>
+<td>9</td>
+<td>com.testscenarios.FlightBooking@561b6512</td></tr>
 <tr>
 <td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_003()'><b>tc_003</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify name field alert with invalid data on  Signup page</td>
 <td></td>
 <td>2</td>
-<td>com.h2ojewellery_testscenarios.TS_01_Registration@399c4be1</td></tr>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
+<tr>
+<td title='com.testscenarios.Annaotations_demo2.f()'><b>f</b><br>Test class: com.testscenarios.Annaotations_demo2</td>
+<td></td>
+<td>0</td>
+<td>com.testscenarios.Annaotations_demo2@7494f96a</td></tr>
+<tr>
+<td title='com.h2ojewellery_testscenarios.TS_02_Login_Logout.tc_009()'><b>tc_009</b><br>Test class: com.h2ojewellery_testscenarios.TS_02_Login_Logout<br>Test method: Verify H2o login page will display  all fields</td>
+<td></td>
+<td>1</td>
+<td>com.h2ojewellery_testscenarios.TS_02_Login_Logout@1757cd72</td></tr>
+<tr>
+<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_004()'><b>tc_004</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify Password field alert with invalid data on  Signup page</td>
+<td></td>
+<td>4</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
+<tr>
+<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_007()'><b>tc_007</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify Normal user will able to Signup successfully</td>
+<td></td>
+<td>6</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
+<tr>
+<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_002()'><b>tc_002</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify alert with blank data on  Signup page</td>
+<td></td>
+<td>2</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
+<tr>
+<td title='com.h2ojewellery_testscenarios.TS_01_Registration.tc_001()'><b>tc_001</b><br>Test class: com.h2ojewellery_testscenarios.TS_01_Registration<br>Test method: Verify H2o Signup page will display  all fields</td>
+<td></td>
+<td>0</td>
+<td>com.h2ojewellery_testscenarios.TS_01_Registration@2e377400</td></tr>
+<tr>
+<td title='com.h2ojewellery_testscenarios.TS_02_Login_Logout.tc_010()'><b>tc_010</b><br>Test class: com.h2ojewellery_testscenarios.TS_02_Login_Logout</td>
+<td></td>
+<td>0</td>
+<td>com.h2ojewellery_testscenarios.TS_02_Login_Logout@1757cd72</td></tr>
+<tr>
+<td title='com.testscenarios.AlertDemo.f()'><b>f</b><br>Test class: com.testscenarios.AlertDemo</td>
+<td></td>
+<td>9</td>
+<td>com.testscenarios.AlertDemo@7770f470</td></tr>
+<tr>
+<td title='com.testscenarios.Annaotations_demo2.a()'><b>a</b><br>Test class: com.testscenarios.Annaotations_demo2</td>
+<td></td>
+<td>0</td>
+<td>com.testscenarios.Annaotations_demo2@7494f96a</td></tr>
 </table><p>
 </body>
 </html>
