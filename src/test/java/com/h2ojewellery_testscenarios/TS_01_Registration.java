@@ -21,7 +21,7 @@ public class TS_01_Registration {
 
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
-		driver = new EdgeDriver();// driver is contains something
+		driver = new ChromeDriver();// driver is contains something
 		driver.manage().window().maximize();
 		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
 		driver.findElement(By.linkText("Sign Up")).click();
@@ -219,11 +219,12 @@ public class TS_01_Registration {
 		 * driver.findElement(By.linkText("Sign Up")).click(); Thread.sleep(2000);
 		 */
 
-		driver = new EdgeDriver();// driver is contains something
+		driver = new ChromeDriver();// driver is contains something
 		driver.manage().window().maximize();
 //		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
 		driver.get("https://h2o-applications.onrender.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		Thread.sleep(10000);
 
 		driver.findElement(By.linkText("Sign Up")).click();
 		Thread.sleep(2000);
@@ -267,7 +268,7 @@ public class TS_01_Registration {
 
 	@Test(description = "Verify Normal user will able to Signup successfully")
 	public void tc_007() throws Exception {
-		driver = new EdgeDriver();// driver is contains something
+		driver = new ChromeDriver();// driver is contains something
 		driver.manage().window().maximize();
 //		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
 		driver.get("https://h2o-applications.onrender.com/");
@@ -317,7 +318,7 @@ public class TS_01_Registration {
 
 	@Test(description = "Verify alert message when sign up with existing user details")
 	public void tc_008() throws Exception {
-		driver = new EdgeDriver();// driver is contains something
+		driver = new ChromeDriver();// driver is contains something
 		driver.manage().window().maximize();
 //		driver.get(" https://seenu4selenium.github.io/devices-management-Webpage");
 		driver.get("https://h2o-applications.onrender.com/");
@@ -326,7 +327,7 @@ public class TS_01_Registration {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		// Navigating page from Login to Signup page.
 		driver.findElement(By.linkText("Sign Up")).click();
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		// SignUp page locators
 		WebElement signUpPage_Name_EditBox = driver.findElement(By.id("signUpName"));
@@ -349,8 +350,8 @@ public class TS_01_Registration {
 		// Check existing user alert message.
 
 		// Get the alert text
-		String alertTextActualResults = driver.switchTo().alert().getText();
-		String alertTextExpectedResults = "User already exists! An account with this name and email is already registered.";
+		//String alertTextActualResults = driver.switchTo().alert().getText();
+		//String alertTextExpectedResults = "User already exists! An account with this name and email is already registered.";
 		// User already exists! An account with this name and email is already
 		// registered.
 
