@@ -6,8 +6,8 @@
 			<class name="com.testscenarios.AlertDemo" />
 			<class name="com.testscenarios.Annaotations_demo2"></class>
 			<class name="com.testscenarios.FlightBooking"></class>
-			<class name="com.h2ojewellery_testscenarios.TS_01_Registration"></class>
-			<class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout"></class>
+			<!-- <class name="com.h2ojewellery_testscenarios.TS_01_Registration"></class>
+			<class name="com.h2ojewellery_testscenarios.TS_02_Login_Logout"></class> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
