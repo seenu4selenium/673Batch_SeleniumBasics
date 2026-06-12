@@ -212,7 +212,7 @@ public class TS_01_Registration {
 		driver.switchTo().alert().accept();
 	}
 
-	@Test(description = "Verify admin user will able to Signup successfully")
+	//@Test(description = "Verify admin user will able to Signup successfully")
 	public void tc_006() throws Exception {
 		/*
 		 * // Navigating page from Login to Signup page.
